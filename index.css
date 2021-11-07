@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800;900&family=Poppins:wght@100&family=Zen+Antique&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Mobile screen*/
+img{
+
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 350px;
+    grid-gap: 150px;
+    width: 300px;
+    padding: 50px;
+}
+
+.picture p{
+transform: rotate(-270deg);
+transform-origin: 0;
+position: relative;
+top: -420px;
+left: 320px;
+font-size: 15px;
+}
+
+.picture h1{
+font-size: 27px;
+margin-top: 15px;
+}
+
+.mobileshift {
+    margin-top: 70px;
+}
+
+
+.Header { 
+    display: block;
+    justify-content: space-between;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 200px;
+    font-family: 'PT Serif', serif;;
+}
+.Header p{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Zen Antique', serif;
+}
+.Header h2{
+    margin-top: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    
+}
+.footer{
+    margin-top: 300px;
+    text-align: center;
+    color: var(--black);
+    opacity: 0.2;
+}
+
+.center-content{
+    margin-left: 80px;
+    width: 100%;
+}
+
+
+
+/*Destop Screen*/
+
+@media only screen and (min-width: 760px) {
+    img{
+
+        height: 400px;
+        width: 300px;
+        object-fit: cover;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 350px;
+        grid-gap: 150px;
+        width: 300px;
+        padding: 50px;
+    }
+    
+    .picture p{
+    transform: rotate(-270deg);
+    transform-origin: 0;
+    position: relative;
+    top: -420px;
+    left: 320px;
+    font-size: 15px;
+    }
+    
+    .picture h1{
+    font-size: 27px;
+    margin-top: 15px;
+    }
+    
+    .Header { 
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+        margin-top: 50px;
+        margin-left: 200px;
+        font-family: 'PT Serif', serif;
+    }
+    .Header p{
+        text-align: right;
+        font-size: 20px;
+        font-family: 'Zen Antique', serif;
+        margin-left: 150px;
+    }
+    .Header h2{
+        margin-left:300px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        
+    }
+    .footer{
+        /* display: flex; */
+        margin-top: 300px;
+        justify-content: center;
+        color: var(--black);
+        opacity: 0.2;
+    }
+    
+    .center-content{
+        margin-left: 80px;
+        width: 100%;
+    }
+    
+    .figma2 img{
+        margin-top: 80px;
+    }
+    
+    .figma5 img{
+        margin-top: 220px;
+    }
+}
